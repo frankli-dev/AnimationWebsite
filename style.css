@@ -1,0 +1,816 @@
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #616971;
+}
+
+
+/*============= TYPOGRAPHY AND BUTTONS =============*/
+
+/*-- Text Colors --*/
+
+.text-green {
+  color: #2abc68;
+}
+.text-blue {
+  color: #5291c9;
+}
+
+a.blue-link {
+  color: #4174a0;
+  text-decoration: none;
+}
+a.blue-link:hover {
+  color: #74a7d3;
+}
+
+/*-- Buttons --*/
+
+.btn-lg {
+  border-width: thin;
+  border-radius: 0;
+  padding: .8rem 1.2rem;
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-md {
+  border-width: .1rem!important;
+  border-radius: 0;
+  padding: .6rem 1rem;
+  font-size: .9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-sm {
+  border-width: .1rem!important;
+  border-radius: 0;
+  padding: .5rem .8rem;
+  font-size: .8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-blue {
+  border-color: #5291c9;
+  background-color: #5291c9;
+  color: white;
+}
+.btn-green {
+  border-color: #2abc68;
+  background-color: #2abc68;
+  color: white;
+}
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-green:hover,
+.btn-green:focus,
+.btn-dark:hover,
+.btn-dark:focus {
+  border-color: white;
+  background-color: white;
+  color: black;
+}
+
+
+/*============= TOP BAR HEADER =============*/
+
+.top-bar {
+  background: #5291c9;
+  height: 2.4rem;
+  padding: .5rem 0;
+}
+.top-bar [class*="col-"] {
+  padding: 0!important;
+  margin: 0!important;
+}
+.fa-ul {
+  margin: 0 auto;
+}
+.fa-ul li {
+  display: inline;
+  padding: 0 .5rem;
+}
+.fa-li {
+  position: relative;
+  left: 0;
+}
+.top-bar .svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.5s ease 0s;
+}
+.top-bar .svg-inline--fa.fa-w-14:hover {
+  color: #d5d5d5;
+}
+.top-bar p, .top-bar a {
+  color: white!important;
+  text-decoration: none!important;
+  font-size: .9rem;
+  display: inline;
+}
+.top-bar .svg-inline--fa.fa-w-12,
+.top-bar .svg-inline--fa.fa-w-16 {
+  color: white;
+  font-size: 1rem;
+  margin-left: .6rem;
+  margin-right: .2rem;
+}
+
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+  background: #fff;
+  padding: .2rem .5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  min-height: 3.3rem;
+}
+.navbar-brand img {
+  height: 3rem;
+}
+.svg-inline--fa.fa-w-14 {
+  color: #5b5555;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: .5rem;
+}
+.navbar-nav .nav-link {
+  color: #5b5555;
+  font-weight: 500;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #4981b3!important;
+}
+.nav-item {
+  padding: 1rem .8rem .5rem .8rem;
+}
+
+/*--- Drop-down Menu --*/
+
+.dropdown-menu, .dropdown-item {
+  font-size: 1rem;
+  font-weight: 400!important;
+  background-color: transparent!important;
+  border: 0;
+  color: #5b5555;
+  text-align: center;
+}
+.dropdown-menu {
+  background-color: #fff!important;
+  margin-top: 0!important;
+  border-radius: 0;
+}
+.dropdown-menu:hover, .dropdown-item:hover,
+.dropdown-menu:focus, .dropdown-item:focus,
+.dropdown-toggle:active, .dropdown-toggle:focus {
+  color: #4981b3!important;
+}
+.dropdown-submenu.solid, .dropdown-menu.show.solid {
+  background: rgba(0, 0, 0, 0.7)!important;
+  transition: background-color 1s ease 0s;
+}
+.dropdown-item {
+  text-align: left;
+  padding: .25rem .1rem .25rem .5rem!important;
+}
+
+
+/*============= CAROUSEL =============*/
+
+.carousel-inner {
+	max-height: 38rem!important;
+}
+.carousel-inner img {
+  width: 100%;
+}
+.carousel-item {
+  /*min-height: 15rem; /*--- (300px for mobile) --*/
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #1A1A1A; /*--- For Firefox white between slides --*/
+}
+
+/*---Change Carousel Transition Speed --*/
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  visibility: hidden;
+}
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  visibility: visible!important;
+}
+.carousel-control-prev .svg-inline--fa.fa-chevron-left {
+  position: absolute;
+  background: gray;
+  border-radius: 0;
+  padding: .7rem 1rem!important;
+  font-size: 2.8rem!important;
+  color: white;
+}
+.carousel-control-next .svg-inline--fa.fa-chevron-right {
+  position: absolute;
+  background: gray;
+  border-radius: 0;
+  padding: .7rem 1rem!important;
+  font-size: 2.8rem!important;
+  color: white;
+}
+
+
+/*===== Carousel Caption =====*/
+
+.carousel-caption {
+  left: 12%;
+  right: 12%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 45%;
+}
+.carousel-caption h1 {
+	font-size: 3rem;
+}
+.carousel-caption .btn {
+  border-width: medium;
+  border-radius: 0;
+}
+.bg-gray {
+	background-color: rgba(108,117,125, 0.6);
+}
+.bg-clear {
+	background-color: rgba(255,255,255, 0.5);
+}
+.carousel-caption.text-right {
+	margin-top: -1.5rem!important;
+}
+
+
+/*============= THREE COLUMNS UNDER CAROUSEL =============*/
+
+img {
+  max-width: 100%;
+}
+.image-scale-img{
+  overflow:hidden;
+}
+.image-scale-img img{
+  transition:.7s;
+}
+.image-scale:hover img {
+  transform: scale(1.08);
+}
+
+
+/*============= FEATURES =============*/
+
+.title-underline {
+  margin: 1rem auto 1.5rem;
+  width: 9rem;
+  height: .1rem;
+  background-color: #d3d3d3;
+}
+
+.title-underline:after {
+  position:  absolute;
+  margin: 0 auto;
+  height: .2rem;
+  width: 2rem;
+  margin-left: -1rem;
+  content:  "";
+  background-color: #5291c9;
+}
+
+.title-underline-white {
+  margin: 1rem auto 1.5rem;
+  width: 9rem;
+  height: .1rem;
+  background-color: white;
+}
+
+.title-underline-white:after {
+  position:  absolute;
+  margin: 0 auto;
+  height: .2rem;
+  width: 2rem;
+  margin-left: -1rem;
+  content:  "";
+  background-color: white;
+}
+
+.services p {
+  font-size: 1.1rem;
+}
+.fa-stack-2x {
+  color: #5291c9;
+}
+
+
+/*===== HOME FIXED BACKGROUND IMG =====*/
+
+#fixed {
+  background-image: url('img/fixed/home-fixed.png');
+  z-index: -1;
+}
+.home-fixed {
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1000!important;
+}
+
+
+/*===== HOME FIXED BACKGROUND IMG =====*/
+
+#fixed-pages {
+  background-image: url('img/fixed/keyboard-gradient.png');
+  z-index: -1;
+}
+.pages-fixed {
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1000!important;
+}
+
+
+/*============= CLIENTS CAROUSEL =============*/
+
+#owl-carousel img {
+ max-width: 12rem;
+ margin: 0 auto;
+}
+#owl-carousel .owl-carousel .owl-nav {
+  position: absolute;
+  top: 45%;
+  min-width: 100%!important;
+  max-width: 100%!important;
+}
+#owl-carousel .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0!important;
+  padding: .4rem 1rem!important;
+  border: .1rem solid black;
+  font-size: 1.3rem!important;
+  color: black;
+  opacity: .7;
+}
+#owl-carousel .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0!important;
+  padding: .4rem 1rem!important;
+  border: .1rem solid black;
+  font-size: 1.3rem!important;
+  color: black;
+  opacity: .7;
+}
+#owl-carousel .owl-carousel .owl-nav button.owl-prev:hover,
+#owl-carousel .owl-carousel .owl-nav button.owl-next:hover {
+  color: white;
+  background-color: black;
+}
+
+/*-- Clients Quote & Image --*/
+
+blockquote .svg-inline--fa {
+  margin: .6rem;
+  font-size: 1.5rem;
+  color: #0771d8;
+  opacity: .2;
+}
+.clients img {
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  transition: all 0.8s ease 0s;
+}
+.clients img:hover {
+  transform: scale(1.1);
+}
+
+
+/*============= LOGO CAROUSEL =============*/
+
+.bg-light {
+  background-color: #F5F5F5;
+}
+#logo-carousel {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+#logo-carousel .owl-nav,
+#logo-carousel .owl-dots {
+  display: none!important;
+}
+#logo-carousel img {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+#logo-carousel .item {
+  margin-right: -.5rem!important;
+}
+
+
+/*============= FOOTER =============*/
+
+footer {
+  background-color: #383838;
+}
+footer {
+  padding: 1rem 2rem 3rem;
+}
+
+img.logo {
+  height: 3.5rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white!important;
+  text-decoration: none!important;
+}
+footer .social a:hover {
+  color: #5291c9;
+  text-decoration: none;
+}
+footer .svg-inline--fa.fa-w-14 {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+footer svg.svg-inline--fa:hover {
+  color: #5291c9!important;
+}
+p.footer-gray {
+  font-size: .8rem;
+  color: #8c8c8c;
+}
+
+
+/*============= SOCKET =============*/
+
+.socket {
+  background-color: #222222;
+  border-top: .1rem solid #666b71;
+  width: 100%;
+}
+
+
+/*============= TOP SCROLL =============*/
+
+.top-scroll svg.svg-inline--fa {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #53595f;
+  background: white;
+}
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .3;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: .5;
+}
+
+
+/*============= MEET THE TEAM CAROUSEL =============*/
+
+#team-carousel {
+  margin-bottom: 7rem!important;
+}
+#team-carousel .owl-carousel .owl-nav {
+  position: absolute;
+  bottom: -3rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 5rem!important;
+}
+#team-carousel .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  bottom: 0!important;
+  left: 0!important;
+  padding: .3rem .7rem!important;
+  border: .1rem solid black;
+  font-size: 1rem!important;
+  color: black;
+  opacity: .7;
+}
+#team-carousel .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  bottom: 0!important;
+  right: 0!important;
+  padding: .3rem .7rem!important;
+  border: .1rem solid black;
+  font-size: 1rem!important;
+  color: black;
+  opacity: .7;
+}
+#team-carousel .owl-carousel .owl-nav button.owl-prev:hover,
+#team-carousel .owl-carousel .owl-nav button.owl-next:hover {
+  color: white;
+  background-color: black;
+}
+
+/*-- Meet The Team Cards --*/
+
+.card {
+  border-radius: 0;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+  margin: 0 .5rem;
+  transition: all 0.5s ease 0s;
+}
+.card img {
+  border-radius: 0;
+}
+.card:hover {
+  transform: scale(.95);
+}
+.card p {
+  border-top: .1rem solid rgba(0, 0, 0, .1);
+  padding-top: 1rem;
+}
+.card p:last-of-type {
+  padding-bottom: 1rem;
+  border-bottom: .1rem solid rgba(0, 0, 0, .1);
+}
+.card svg.svg-inline--fa {
+  color: #343A40!important;
+  font-size: 1.5rem;
+  width: 2rem;
+}
+.card svg.svg-inline--fa:hover {
+  color: #5291c9!important;
+}
+
+
+/*============= PROJECTS CAROUSEL =============*/
+
+.projects-carousel img {
+ margin: 0 auto;
+}
+.projects-carousel .owl-carousel .owl-nav {
+  position: absolute;
+  top: 45%;
+  min-width: 100%!important;
+  max-width: 100%!important;
+}
+.projects-carousel .owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0!important;
+  padding: .4rem 1rem!important;
+  border: .1rem solid black;
+  font-size: 1.3rem!important;
+  color: black;
+  opacity: .7;
+}
+.projects-carousel .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0!important;
+  padding: .4rem 1rem!important;
+  border: .1rem solid black;
+  font-size: 1.3rem!important;
+  color: black;
+  opacity: .7;
+}
+.projects-carousel .owl-carousel .owl-nav button.owl-prev:hover,
+.projects-carousel .owl-carousel .owl-nav button.owl-next:hover {
+  color: white;
+  background-color: black;
+}
+
+
+/*============= PROGRESS BAR =============*/
+
+.progressbar {
+  margin-bottom: .6rem!important;
+}
+.percentCount {
+  margin-top: -3.1rem!important;
+  font-weight: 400!important;
+  font-size: 1.2rem;
+}
+
+/*============= PROJECT GALLERY FILTER / LIGHTBOX =============*/
+
+/*-- Project Gallery Menu --*/
+
+.gallery {
+  width: 100%!important;
+}
+.gallery ul li {
+  padding: .5rem;
+}
+.gallery ul li.filtr-active a.nav-link.filtr,
+li a.nav-link.filtr.active,
+li a.nav-link.filtr:hover {
+  background-color: #5291c9!important;
+  color: #fff!important;
+  cursor: pointer!important;
+}
+a.nav-link.filtr {
+  padding-left: 1rem;
+}
+
+/*-- Project Gallery Layout --*/
+
+.filtr-item {
+  width: 33.33%;
+  padding: .7rem;
+  height: auto;
+}
+.filtr-item img {
+  width: 100%;
+  margin-bottom: 1.5rem!important;
+  height: auto;
+  display:block;
+  transition: all 0.3s ease 0s;
+}
+.filtr-item img:hover {
+  opacity: .7!important;
+  transition: all 0.3s ease 0s;
+}
+p.project-details {
+  margin-top: -1.5rem;
+  padding-top: .5rem;
+  background-color: #f2f2f2;
+}
+
+
+/*============= CONTACT FORM =============*/
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  border-radius: 0;
+}
+.form-control:focus {
+  border: thin solid #666;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8!important;
+}
+input.btn {
+  cursor: pointer;
+}
+.contact-social .svg-inline--fa {
+  margin-right: .3rem;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1200px (xl) */
+@media (max-width: 1199px) {
+
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+
+}
+
+/* Devices under 992px (lg) */
+@media (max-width: 991px) {
+
+  .carousel-caption {
+    top: 42%!important;
+  }
+  .carousel-caption h1 {
+    font-size: 2.2rem;
+  }
+  .filtr-item {
+    width: 50%;
+  }
+
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+
+  .carousel-caption {
+    top: 40%!important;
+  }
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption h2 {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+  }
+  .carousel-caption p.lead {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+  .btn-lg {
+    padding: .5rem .7rem!important;
+    font-size: .8rem;
+    margin: .4rem!important;
+  }
+  .btn-md {
+    padding: .4rem .6rem!important;
+    font-size: .8rem;
+    margin: .4rem!important;
+  }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.3rem; }
+  h5 { font-size: 1.2rem; }
+  h6 { font-size: 1.1rem; }
+  p { font-size: 1.1rem; }
+  .top-scroll {
+    display: none!important;
+  }
+  .filtr-item {
+    width: 100%;
+  }
+  .projects-carousel .owl-carousel .owl-nav button.owl-prev {
+    left: -1rem!important;
+  }
+  .projects-carousel .owl-carousel .owl-nav button.owl-next {
+    right: -1rem!important;
+  }
+  .projects-carousel img {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+
+  .carousel-caption {
+    top: 44%;
+    width: 100%;
+    left: 0;
+  }
+  .carousel-inner {
+    padding: 0;
+    margin: 0;
+  }
+  .carousel-caption h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .carousel-caption .btn-lg {
+    display: none;
+  }
+
+}
+
+/* Devices under 420px */
+@media (max-width: 420px) {
+
+  .carousel-caption {
+    top: 38%!important;
+  }
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
